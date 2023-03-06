@@ -12,8 +12,8 @@ resource "aws_security_group" "allow_ssh_and_http" {
 
   ingress {
     description = "allow HTTP"
-    from_port   = 443
-    to_port     = 443
+    from_port   = 80
+    to_port     = 80
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
