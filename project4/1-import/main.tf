@@ -1,17 +1,3 @@
-terraform {
-  required_version = "~> 1.3.9"
-  required_providers {
-    aws = {
-      source = "hashicorp/aws"
-      version = "4.59.0"
-    }
-  }
-}
-
-provider "aws" {
-  region = "us-east-1"
-}
-
 ### Step 1 ###
 # resource "aws_instance" "instance" {
 #   ami           = "example"

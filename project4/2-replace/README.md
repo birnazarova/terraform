@@ -4,8 +4,8 @@ The terraform taint command informs Terraform that a particular object has becom
 Starting with Terraform version 0.15.2 and onwards, the taint command is deprecated, and it is suggested to use apply command with the -replace flag
 
 # Replace
-1. Create 2 EC2 instances with terraform
-2. Run `terraform apply -replace="aws_instance.instance[1]"` to replace second instance
+1. Create an EC2 instance with terraform
+2. Run `terraform apply -replace="aws_instance.instance"` to replace the instance
 
 # Target
-`terraform destroy(apply) --target="aws_instance.instance[1]"`
+`terraform destroy(apply) --target="aws_instance.instance"`
