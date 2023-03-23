@@ -10,7 +10,7 @@ resource "aws_autoscaling_group" "asg" {
     aws_elb.elb.id
   ]
 
-  launch_configuration = aws_launch_configuration.launch_configuration.name-asg #
+  launch_configuration = aws_launch_configuration.launch_configuration.name
 
   enabled_metrics = [
     "GroupMinSize",
