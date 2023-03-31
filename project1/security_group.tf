@@ -21,7 +21,7 @@ resource "aws_security_group" "allow_ssh_and_http" {
   egress {
     from_port   = 0
     to_port     = 0
-    protocol    = "-1"            # -1 semantically equivalent to "all"
+    protocol    = "-1" # -1 semantically equivalent to "all"
     cidr_blocks = ["0.0.0.0/0"]
   }
 
